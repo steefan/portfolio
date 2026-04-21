@@ -1,26 +1,327 @@
-@import "tailwindcss";
-
 :root {
-  --background: #ffffff;
-  --foreground: #171717;
+  --ink: #0F0F0F;
+  --ink-soft: #2B2B2B;
+  --muted: #6B6B6B;
+  --muted-soft: #8A8580;
+  --rule: #E2E0DB;
+  --paper: #FAF8F3;
+  --gilead: #A83A2A;
+  --oramo: #1F4A3A;
+  --ownzones: #3A4A7A;
+  --max-width: 780px;
 }
 
-@theme inline {
-  --color-background: var(--background);
-  --color-foreground: var(--foreground);
-  --font-sans: var(--font-geist-sans);
-  --font-mono: var(--font-geist-mono);
-}
-
-@media (prefers-color-scheme: dark) {
-  :root {
-    --background: #0a0a0a;
-    --foreground: #ededed;
-  }
-}
-
+* { box-sizing: border-box; }
+html, body { margin: 0; padding: 0; background: var(--paper); color: var(--ink); }
 body {
-  background: var(--background);
-  color: var(--foreground);
-  font-family: Arial, Helvetica, sans-serif;
+  font-family: "Iowan Old Style", "Palatino Linotype", Palatino, "Book Antiqua", Georgia, serif;
+  font-size: 17px;
+  line-height: 1.6;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+a { color: inherit; text-decoration: none; border-bottom: 1px solid var(--rule); transition: border-color 0.15s ease; }
+a:hover { border-bottom-color: var(--ink); }
+
+.wrap {
+  max-width: var(--max-width);
+  margin: 0 auto;
+  padding: 96px 28px 120px;
+}
+
+/* ========== Index page ========== */
+.name {
+  font-family: "Iowan Old Style", "Palatino Linotype", Palatino, Georgia, serif;
+  font-weight: 600;
+  font-size: 44px;
+  line-height: 1.05;
+  letter-spacing: -0.01em;
+  margin: 0 0 6px;
+  color: var(--ink);
+}
+.title-line {
+  font-family: "Iowan Old Style", Georgia, serif;
+  font-style: italic;
+  font-size: 19px;
+  line-height: 1.45;
+  color: var(--ink-soft);
+  margin: 0 0 22px;
+}
+.currently {
+  font-family: Helvetica, Arial, sans-serif;
+  font-size: 12px;
+  text-transform: uppercase;
+  letter-spacing: 0.18em;
+  color: var(--muted);
+  margin: 0 0 8px;
+}
+.currently-body {
+  font-family: "Iowan Old Style", Georgia, serif;
+  font-size: 16.5px;
+  line-height: 1.55;
+  color: var(--ink);
+  margin: 0 0 48px;
+  max-width: 620px;
+}
+.currently-body strong {
+  font-weight: 600;
+  color: var(--ink);
+}
+.intro {
+  font-family: "Iowan Old Style", Georgia, serif;
+  font-size: 17.5px;
+  line-height: 1.6;
+  color: var(--ink);
+  margin: 0 0 72px;
+  max-width: 620px;
+}
+
+h2 {
+  font-family: Helvetica, Arial, sans-serif;
+  font-size: 11px;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.22em;
+  color: var(--muted);
+  margin: 0 0 28px;
+}
+
+.case {
+  display: block;
+  border: none;
+  padding: 22px 0 22px 22px;
+  margin: 0 0 28px;
+  position: relative;
+  transition: transform 0.2s ease;
+}
+.case::before {
+  content: "";
+  position: absolute;
+  left: 0;
+  top: 22px;
+  bottom: 22px;
+  width: 3px;
+  background: var(--rule);
+  transition: background 0.15s ease;
+}
+.case:hover { transform: translateX(4px); }
+.case.gilead:hover::before { background: var(--gilead); }
+.case.oramo:hover::before { background: var(--oramo); }
+.case.ownzones:hover::before { background: var(--ownzones); }
+
+.case-meta {
+  font-family: Helvetica, Arial, sans-serif;
+  font-size: 11px;
+  text-transform: uppercase;
+  letter-spacing: 0.14em;
+  color: var(--muted);
+  margin-bottom: 10px;
+}
+.case-title {
+  font-family: "Iowan Old Style", Georgia, serif;
+  font-weight: 600;
+  font-size: 26px;
+  line-height: 1.15;
+  letter-spacing: -0.005em;
+  color: var(--ink);
+  margin: 0 0 10px;
+}
+.case-deck {
+  font-family: "Iowan Old Style", Georgia, serif;
+  font-style: italic;
+  font-size: 16.5px;
+  line-height: 1.5;
+  color: var(--ink-soft);
+  margin: 0 0 14px;
+  max-width: 580px;
+}
+.case-role {
+  font-family: Helvetica, Arial, sans-serif;
+  font-size: 12.5px;
+  color: var(--muted);
+  margin: 0;
+}
+.case-role .dot {
+  display: inline-block;
+  margin: 0 6px;
+  color: var(--muted-soft);
+}
+
+.divider { border: none; border-top: 1px solid var(--rule); margin: 72px 0 48px; }
+
+.aside {
+  font-family: "Iowan Old Style", Georgia, serif;
+  font-size: 16.5px;
+  line-height: 1.6;
+  color: var(--ink);
+  max-width: 620px;
+  margin: 0 0 48px;
+}
+.aside p { margin: 0 0 14px; }
+
+.contact {
+  font-family: Helvetica, Arial, sans-serif;
+  font-size: 13px;
+  color: var(--muted);
+  line-height: 1.8;
+}
+.contact strong {
+  color: var(--ink);
+  font-weight: 600;
+  margin-right: 6px;
+  display: inline-block;
+  min-width: 80px;
+  font-family: Helvetica, Arial, sans-serif;
+}
+.contact a {
+  color: var(--ink);
+  border-bottom: 1px solid var(--rule);
+}
+.contact a:hover { border-bottom-color: var(--ink); }
+
+.colophon {
+  font-family: Helvetica, Arial, sans-serif;
+  font-size: 11px;
+  color: var(--muted-soft);
+  letter-spacing: 0.02em;
+  margin-top: 72px;
+  padding-top: 24px;
+  border-top: 1px solid var(--rule);
+}
+
+a.case { border-bottom: none; }
+a.case:hover { border-bottom: none; }
+
+/* ========== Case-study shared ========== */
+.case-page .wrap { max-width: 760px; padding: 72px 28px 120px; }
+
+.case-page .meta {
+  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-size: 11px;
+  text-transform: uppercase;
+  letter-spacing: 0.14em;
+  color: var(--muted);
+  display: flex;
+  gap: 18px;
+  margin-bottom: 18px;
+  flex-wrap: wrap;
+}
+.case-page .meta span { white-space: nowrap; }
+
+.case-page h1 {
+  font-family: "Iowan Old Style", "Palatino Linotype", Palatino, Georgia, serif;
+  font-weight: 600;
+  font-size: 44px;
+  line-height: 1.08;
+  letter-spacing: -0.01em;
+  margin: 0 0 10px;
+  color: var(--ink);
+}
+
+.case-page .deck {
+  font-family: "Iowan Old Style", Georgia, serif;
+  font-style: italic;
+  font-size: 20px;
+  line-height: 1.45;
+  color: var(--ink-soft);
+  margin: 0 0 42px;
+  max-width: 620px;
+}
+
+.case-page .outcome {
+  border-left: 3px solid var(--accent);
+  padding: 4px 0 4px 22px;
+  margin: 0 0 48px;
+}
+.case-page .outcome .label {
+  font-family: Helvetica, Arial, sans-serif;
+  font-size: 10.5px;
+  text-transform: uppercase;
+  letter-spacing: 0.18em;
+  color: var(--accent);
+  margin-bottom: 8px;
+}
+.case-page .outcome p {
+  margin: 0;
+  font-size: 18px;
+  line-height: 1.55;
+  color: var(--ink);
+}
+
+.case-page h2 {
+  font-family: Helvetica, Arial, sans-serif;
+  font-size: 11px;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.22em;
+  color: var(--muted);
+  margin: 56px 0 14px;
+}
+
+.case-page p { margin: 0 0 14px; }
+.case-page strong { font-weight: 600; color: var(--ink); }
+.case-page em { color: var(--ink-soft); }
+
+.case-page blockquote {
+  font-family: "Iowan Old Style", Georgia, serif;
+  font-style: italic;
+  font-size: 19px;
+  line-height: 1.5;
+  color: var(--ink);
+  margin: 28px 0;
+  padding: 0 0 0 22px;
+  border-left: 2px solid var(--rule);
+}
+.case-page blockquote cite {
+  display: block;
+  font-style: normal;
+  font-family: Helvetica, Arial, sans-serif;
+  font-size: 12px;
+  color: var(--muted);
+  margin-top: 8px;
+  letter-spacing: 0.04em;
+}
+
+.case-page figure { margin: 36px 0; }
+.case-page figure svg { width: 100%; height: auto; display: block; }
+.case-page figcaption {
+  font-family: Helvetica, Arial, sans-serif;
+  font-size: 12px;
+  color: var(--muted);
+  margin-top: 10px;
+  line-height: 1.5;
+}
+.case-page figcaption .fig-label {
+  color: var(--ink);
+  font-weight: 600;
+  margin-right: 6px;
+}
+
+.case-page hr {
+  border: none;
+  border-top: 1px solid var(--rule);
+  margin: 56px 0 28px;
+}
+.case-page .footer {
+  font-family: Helvetica, Arial, sans-serif;
+  font-size: 12.5px;
+  color: var(--muted);
+  line-height: 1.6;
+}
+
+/* ========== Mobile ========== */
+@media (max-width: 600px) {
+  .wrap { padding: 64px 22px 96px; }
+  .case-page .wrap { padding: 48px 22px 96px; }
+  .name { font-size: 34px; }
+  .title-line { font-size: 17px; }
+  .intro { font-size: 16.5px; }
+  .case-title { font-size: 22px; }
+  .case-deck { font-size: 15.5px; }
+  body { font-size: 16px; }
+  .case-page h1 { font-size: 34px; }
+  .case-page .deck { font-size: 18px; }
+  .case-page .outcome p { font-size: 16px; }
+  .case-page blockquote { font-size: 17px; }
 }
