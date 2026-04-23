@@ -56,8 +56,8 @@ export default function Home() {
           label="Status"
           value={
             <>
-              Open to <strong>senior IC roles</strong> at companies serious
-              about operator UX
+              Open to <strong>senior IC roles</strong> on teams building
+              tools people use all day
             </>
           }
         />
