@@ -28,16 +28,17 @@ export default function OramoCase() {
         <h1>How do you put an AI in a product it has no right to see?</h1>
         <p className="deck">
           Oramo is the property management platform I’m building for Romanian
-          landlords. Two features I shipped as sole designer and sole
-          developer — and the question about data, trust, and multi-tenancy
-          they turned out to share.
+          landlords in a three-founder bootstrap. Two features I led from
+          design through implementation — with AI (Claude Code) as a
+          force-multiplier, not a replacement — and the question about data,
+          trust, and multi-tenancy they turned out to share.
         </p>
 
         <div className="case-fact-strip">
           <div>
             <strong>Role</strong>Technical co-founder &amp; product designer ·
-            sole designer and sole developer · Oramo (Jan 2025–present,
-            launched April 2026)
+            design and implementation lead in a three-founder team · Oramo
+            (Jan 2025–present, launched April 2026)
           </div>
           <div>
             <strong>Team</strong>3 founders · real-estate, financial strategy,
@@ -106,10 +107,13 @@ export default function OramoCase() {
 
         <h2>My role</h2>
         <p>
-          <strong>Technical co-founder. Sole designer. Sole developer.</strong>{" "}
-          In a three-person founding team — real-estate expertise, financial
-          strategy, execution — I own product strategy, design, and the full
-          stack (Next.js, Supabase, Vercel). Claude Code as primary copilot.
+          <strong>Technical co-founder.</strong> In a three-person founding
+          team — real-estate expertise, financial strategy, and me on product
+          strategy, design, and implementation — I own the product surface
+          end-to-end. Bootstrapping meant{" "}
+          <strong>leveraging AI (Claude Code) heavily as a tool</strong> to
+          extend what three founders could ship — not to replace roles on the
+          team. AI as force-multiplier, not solution.
         </p>
 
         <h2>Three decisions that mattered</h2>
@@ -325,11 +329,11 @@ export default function OramoCase() {
           . Those decisions live in the data layer, not the interface.
         </p>
         <p>
-          And: one senior designer who holds the full stack in mind can now
-          ship what would have taken a small team two years ago. That’s the
+          And: a small team using AI as a tool, not a solution, can now ship
+          what would have taken a much larger team two years ago. That’s the
           shape of work I’d bring into a larger team — someone who designs
           the surface, understands the system underneath, and makes the
-          tradeoff calls in the room.
+          tradeoff calls in the room alongside engineering, not in isolation.
         </p>
 
       </div>

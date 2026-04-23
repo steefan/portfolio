@@ -96,22 +96,23 @@ export default function Home() {
           meta="Oramo"
           title="How do you put an AI in a product it has no right to see?"
           wordmarks={["Oramo"]}
-          lede="Designing an AI-native B2B product end-to-end as sole designer and sole developer. Two features, one permissions problem."
+          lede="Designing an AI-native B2B product end-to-end in a three-founder bootstrap. AI as a tool that extends what the team can ship — not a replacement for roles. Two features, one permissions problem."
           outcomes={[
             <>
               First intelligent property platform in a{" "}
               <strong>€2.75B market</strong>
             </>,
             <>
-              Shipped steady-state as{" "}
-              <strong>solo designer / solo developer</strong>
+              Shipped steady-state by a{" "}
+              <strong>three-founder team</strong> using{" "}
+              <strong>AI as a force-multiplier, not a replacement</strong>
             </>,
             <>
               AI surfaces only{" "}
               <strong>what the operator is allowed to see</strong>
             </>,
           ]}
-          deliverables={["Technical co-founder", "Sole designer", "Sole developer"]}
+          deliverables={["Technical co-founder", "Design lead", "AI-native implementation"]}
           diagram={<ScatterDiagram />}
         />
 
