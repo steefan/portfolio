@@ -95,10 +95,14 @@ export default function OramoCase() {
 
         <h2>Context</h2>
         <p>
-          29 Romanian landlord interviews, a competitive review across five
-          portals, and a structured survey surfaced one finding:{" "}
+          Tens of discussions across the country —{" "}
           <strong>
-            86% of landlords operated their portfolios with zero profitability
+            30+ with landlords managing portfolios of 1 to 10+ properties
+          </strong>
+          , <strong>10+ with agencies</strong> — plus competitive review and
+          structured survey work surfaced one finding:{" "}
+          <strong>
+            most landlords operated their portfolios with zero profitability
             visibility.
           </strong>{" "}
           The tool of record was Excel paired with WhatsApp. Supply-side
