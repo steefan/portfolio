@@ -457,20 +457,22 @@ a.unstyled, a.unstyled:hover { border-bottom: none; }
   font-family: var(--mono);
   font-size: 11px;
   color: var(--ink-soft);
-  line-height: 1.8;
+  line-height: 1.6;
   letter-spacing: 0.04em;
   text-transform: uppercase;
-  padding: 20px 0;
+  padding: 24px 0;
   margin: 0 0 40px;
   border-top: 0.5px solid var(--rule);
   border-bottom: 0.5px solid var(--rule);
+  display: grid;
+  gap: 20px;
 }
+.case-fact-strip > div { display: block; }
 .case-fact-strip strong {
   color: var(--ink);
-  font-weight: 500;
-  margin-right: 8px;
-  display: inline-block;
-  min-width: 110px;
+  font-weight: 600;
+  display: block;
+  margin-bottom: 6px;
 }
 
 /* Monochrome SVG class overrides used inside case-study diagrams.
@@ -560,5 +562,4 @@ a.unstyled, a.unstyled:hover { border-bottom: none; }
   .case-page h1 { font-size: 32px; }
   .case-page .deck { font-size: 18px; }
   .outcome-block .outcome-bullets li { font-size: 16px; }
-  .case-fact-strip strong { display: block; min-width: 0; margin-bottom: 2px; }
 }
