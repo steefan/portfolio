@@ -116,32 +116,6 @@ export default function Home() {
         />
 
         <CaseInline
-          href="/case-l1-blockchain-ux"
-          meta="An L1 blockchain platform"
-          title="Making crypto UX legible to non-crypto users"
-          wordmarks={["Anonymized (L1 blockchain)"]}
-          lede="Led UX on a Layer 1 blockchain from MVP through a 7-week incentivized testnet. This is about the translation layer."
-          outcomes={[
-            <>
-              Incentivized testnet with{" "}
-              <strong>~60 participants over 7 weeks</strong>
-            </>,
-            <>
-              Cryptographic goals translated into{" "}
-              <strong>
-                product requirements PM and engineering could build from
-              </strong>
-            </>,
-            <>
-              Telemetry synthesized into{" "}
-              <strong>concrete changes for the mainnet roadmap</strong>
-            </>,
-          ]}
-          deliverables={["Founder & Product Design Lead", "Sole UX, liaison role"]}
-          diagram={<HexNodeDiagram />}
-        />
-
-        <CaseInline
           href="/case-gilead-discovery"
           meta="Gilead Sciences"
           title="The 30-app problem"
@@ -357,61 +331,6 @@ function CaseInline({
 // ============================================================
 // Diagrams — deterministic SVG (no Math.random, safe for SSR)
 // ============================================================
-
-function HexNodeDiagram() {
-  // Hex-lattice cloud evoking a decentralized network. 3 rings around a center.
-  // Ring radii, counts hand-picked so nodes don't stack.
-  const rings = [
-    { r: 0, count: 1 },
-    { r: 24, count: 6 },
-    { r: 44, count: 9 },
-  ];
-  const center = { x: 80, y: 60 };
-  const nodes = rings.flatMap(({ r, count }) =>
-    Array.from({ length: count }, (_, i) => {
-      if (r === 0) return center;
-      const angle = (i / count) * Math.PI * 2 + (r === 44 ? Math.PI / 9 : 0);
-      return {
-        x: center.x + Math.cos(angle) * r,
-        y: center.y + Math.sin(angle) * r,
-      };
-    })
-  );
-  return (
-    <svg viewBox="0 0 160 120" style={{ maxWidth: 280 }} aria-hidden>
-      {nodes.slice(1).map((n, i) => (
-        <line
-          key={"l" + i}
-          x1={center.x}
-          y1={center.y}
-          x2={n.x}
-          y2={n.y}
-          stroke="var(--ink)"
-          strokeOpacity="0.18"
-          strokeWidth="0.4"
-        />
-      ))}
-      {nodes.map((n, i) => (
-        <circle
-          key={"n" + i}
-          cx={n.x}
-          cy={n.y}
-          r={i === 0 ? 3.2 : 1.6}
-          fill="var(--ink)"
-        />
-      ))}
-      <circle
-        cx={center.x}
-        cy={center.y}
-        r="7"
-        fill="none"
-        stroke="var(--ink)"
-        strokeWidth="0.4"
-        strokeOpacity="0.35"
-      />
-    </svg>
-  );
-}
 
 function GridDiagram({
   cols = 10,
