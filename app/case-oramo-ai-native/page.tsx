@@ -12,7 +12,7 @@ export default function OramoCase() {
     <div className="case-page">
       <div className="page">
         <Link href="/" className="case-back unstyled">
-          ← Stefan Condurachi
+          ← Back
         </Link>
 
         <div className="case-meta-strip">
