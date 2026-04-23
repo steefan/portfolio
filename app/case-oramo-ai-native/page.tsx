@@ -122,8 +122,9 @@ export default function OramoCase() {
           <strong>
             1. Build the data layer as if it were the product.
           </strong>{" "}
-          The market-intelligence engine parses asking-price data from Storia,
-          OLX, and Imobiliare into per-zone benchmarks. The move that matters
+          The market-intelligence engine parses asking-price data from three
+          of Romania’s largest real estate listing websites into per-zone
+          benchmarks. The move that matters
           is what comes next: as Oramo users sign leases inside the product,
           the platform accumulates{" "}
           <strong>the first real-rental-price dataset in Romania</strong> —
@@ -144,13 +145,13 @@ export default function OramoCase() {
             <text className="panel-head" x="30" y="46">Bootstrap: listing data</text>
 
             <rect className="node-fill" x="30" y="66" width="90" height="28" rx="2" />
-            <text className="node-label" x="75" y="84" textAnchor="middle">Storia</text>
+            <text className="node-label" x="75" y="84" textAnchor="middle">Website 1</text>
 
             <rect className="node-fill" x="30" y="104" width="90" height="28" rx="2" />
-            <text className="node-label" x="75" y="122" textAnchor="middle">OLX</text>
+            <text className="node-label" x="75" y="122" textAnchor="middle">Website 2</text>
 
             <rect className="node-fill" x="30" y="142" width="90" height="28" rx="2" />
-            <text className="node-label" x="75" y="160" textAnchor="middle">Imobiliare</text>
+            <text className="node-label" x="75" y="160" textAnchor="middle">Website 3</text>
 
             <path className="flow" d="M 120,80 Q 160,80 190,118" />
             <path className="flow" d="M 120,118 L 190,118" />
