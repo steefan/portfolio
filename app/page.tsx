@@ -6,7 +6,7 @@ import Counter from "./_components/Counter";
 export const metadata: Metadata = {
   title: "Stefan Condurachi — Senior Product Designer",
   description:
-    "Senior product designer — operator-facing tools, AI-native workflows. Case studies: Oramo, Gilead Sciences, Ownzones.",
+    "Senior product designer — making complex work feel clear. Case studies: Oramo, Gilead Sciences, Ownzones.",
 };
 
 export default function Home() {
@@ -15,7 +15,7 @@ export default function Home() {
       <header className="page-header">
         <h1 className="page-h1">Stefan Condurachi</h1>
         <p className="page-sub">
-          Senior product designer — operator-facing tools, AI-native workflows.
+          Senior product designer — making complex work feel clear.
         </p>
       </header>
 
