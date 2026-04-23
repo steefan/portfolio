@@ -7,7 +7,7 @@
   --serif: "Iowan Old Style", "Palatino Linotype", Palatino, "Book Antiqua", Georgia, serif;
   --mono: "IBM Plex Mono", ui-monospace, "SF Mono", Menlo, Consolas, monospace;
   --accent: var(--ink);
-  --max-width: 820px;
+  --max-width: 960px;
 }
 
 * { box-sizing: border-box; }
@@ -65,15 +65,15 @@ a.unstyled, a.unstyled:hover { border-bottom: none; }
 /* ========== Mono labels ========== */
 .mono-label {
   font-family: var(--mono);
-  font-size: 11px;
+  font-size: 12px;
   letter-spacing: 0.1em;
   color: var(--ink-soft);
   text-transform: uppercase;
 }
-.mono-label.tight { letter-spacing: 0.08em; font-size: 11px; }
+.mono-label.tight { letter-spacing: 0.08em; font-size: 12px; }
 .mono-small {
   font-family: var(--mono);
-  font-size: 10px;
+  font-size: 11px;
   letter-spacing: 0.08em;
   color: var(--ink-soft);
   text-transform: uppercase;
@@ -83,30 +83,30 @@ a.unstyled, a.unstyled:hover { border-bottom: none; }
 .facts { margin-bottom: 56px; }
 .fact-row {
   display: grid;
-  grid-template-columns: 100px 1fr;
+  grid-template-columns: 120px 1fr;
   column-gap: 24px;
-  padding: 10px 0;
+  padding: 12px 0;
   border-bottom: 0.5px solid var(--rule);
 }
 .fact-row .fact-label {
   font-family: var(--mono);
-  font-size: 11px;
+  font-size: 12px;
   letter-spacing: 0.08em;
   color: var(--ink-soft);
   padding-top: 3px;
   text-transform: uppercase;
 }
-.fact-row .fact-value { font-size: 16px; }
+.fact-row .fact-value { font-size: 17px; }
 
 /* ========== Range / intro ========== */
 .range {
   margin-bottom: 56px;
   display: grid;
-  grid-template-columns: 1fr 200px;
+  grid-template-columns: 1fr 220px;
   grid-template-areas:
     "label label"
     "body  pills";
-  column-gap: 40px;
+  column-gap: 48px;
   row-gap: 12px;
   align-items: flex-start;
 }
@@ -147,12 +147,12 @@ a.unstyled, a.unstyled:hover { border-bottom: none; }
 }
 .pill-value {
   font-family: var(--serif);
-  font-size: 13px;
+  font-size: 14px;
   font-weight: 600;
 }
 .pill-tag {
   font-family: var(--mono);
-  font-size: 10px;
+  font-size: 11px;
   letter-spacing: 0.08em;
   color: var(--ink-soft);
   text-transform: uppercase;
@@ -172,8 +172,8 @@ a.unstyled, a.unstyled:hover { border-bottom: none; }
 
 .case-inline-grid {
   display: grid;
-  grid-template-columns: 1fr 200px;
-  gap: 32px;
+  grid-template-columns: 1fr 240px;
+  gap: 40px;
   align-items: flex-start;
   margin-top: 12px;
 }
@@ -204,7 +204,7 @@ a.unstyled, a.unstyled:hover { border-bottom: none; }
 .outcomes li {
   display: flex;
   align-items: flex-start;
-  font-size: 15px;
+  font-size: 16px;
   line-height: 1.5;
 }
 .outcomes .bullet {
@@ -228,7 +228,7 @@ a.unstyled, a.unstyled:hover { border-bottom: none; }
   display: inline-flex;
   align-items: center;
   gap: 6px;
-  font-size: 13px;
+  font-size: 14px;
 }
 .check {
   flex-shrink: 0;
@@ -237,7 +237,7 @@ a.unstyled, a.unstyled:hover { border-bottom: none; }
 
 .case-inline-note {
   font-family: var(--mono);
-  font-size: 10px;
+  font-size: 11px;
   letter-spacing: 0.08em;
   color: var(--ink-soft);
   margin-top: 8px;
@@ -303,7 +303,7 @@ a.unstyled, a.unstyled:hover { border-bottom: none; }
   padding-top: 20px;
   border-top: 0.5px solid var(--rule);
   font-family: var(--mono);
-  font-size: 10px;
+  font-size: 11px;
   letter-spacing: 0.08em;
   color: var(--ink-soft);
   text-transform: uppercase;
@@ -320,7 +320,7 @@ a.unstyled, a.unstyled:hover { border-bottom: none; }
 }
 .case-meta-strip span {
   font-family: var(--mono);
-  font-size: 11px;
+  font-size: 12px;
   letter-spacing: 0.08em;
   color: var(--ink-soft);
   text-transform: uppercase;
@@ -353,10 +353,10 @@ a.unstyled, a.unstyled:hover { border-bottom: none; }
 }
 .outcome-block .outcome-label {
   font-family: var(--mono);
-  font-size: 10px;
+  font-size: 11px;
   letter-spacing: 0.12em;
   color: var(--ink-soft);
-  margin-bottom: 10px;
+  margin-bottom: 12px;
   text-transform: uppercase;
 }
 .outcome-block .outcome-bullets {
@@ -385,15 +385,15 @@ a.unstyled, a.unstyled:hover { border-bottom: none; }
 
 .case-page h2 {
   font-family: var(--mono);
-  font-size: 11px;
+  font-size: 12px;
   font-weight: 500;
   text-transform: uppercase;
   letter-spacing: 0.12em;
   color: var(--ink-soft);
-  margin: 48px 0 14px;
+  margin: 48px 0 16px;
 }
 
-.case-page p { margin: 0 0 14px; font-size: 16.5px; line-height: 1.6; }
+.case-page p { margin: 0 0 14px; font-size: 17px; line-height: 1.6; }
 .case-page strong { font-weight: 600; color: var(--ink); }
 .case-page em { color: var(--ink-soft); }
 
@@ -422,7 +422,7 @@ a.unstyled, a.unstyled:hover { border-bottom: none; }
 .case-page figure svg { width: 100%; height: auto; display: block; }
 .case-page figcaption {
   font-family: var(--mono);
-  font-size: 11px;
+  font-size: 12px;
   color: var(--ink-soft);
   margin-top: 10px;
   line-height: 1.5;
@@ -443,7 +443,7 @@ a.unstyled, a.unstyled:hover { border-bottom: none; }
 
 .case-back {
   font-family: var(--mono);
-  font-size: 11px;
+  font-size: 12px;
   letter-spacing: 0.08em;
   color: var(--ink);
   text-transform: uppercase;
@@ -455,7 +455,7 @@ a.unstyled, a.unstyled:hover { border-bottom: none; }
 
 .case-fact-strip {
   font-family: var(--mono);
-  font-size: 11px;
+  font-size: 13px;
   color: var(--ink-soft);
   line-height: 1.6;
   letter-spacing: 0.04em;
@@ -465,7 +465,7 @@ a.unstyled, a.unstyled:hover { border-bottom: none; }
   border-top: 0.5px solid var(--rule);
   border-bottom: 0.5px solid var(--rule);
   display: grid;
-  gap: 20px;
+  gap: 22px;
 }
 .case-fact-strip > div { display: block; }
 .case-fact-strip strong {
