@@ -199,7 +199,8 @@ export default function OwnzonesCase() {
             <text className="node-sub" x="391" y="276">Transcoding jobs, parameters, endpoints</text>
             <text className="node-sub" x="391" y="292">One click away for engineers and power users</text>
 
-            <text className="arrow-label" x="318" y="262">one click</text>
+            <text className="arrow-label" x="340" y="258" textAnchor="middle">One</text>
+            <text className="arrow-label" x="340" y="272" textAnchor="middle">click</text>
           </svg>
           <figcaption>
             <span className="fig-label">Fig. 1</span>
