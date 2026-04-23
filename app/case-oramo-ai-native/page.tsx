@@ -22,7 +22,7 @@ export default function OramoCase() {
           <span className="dot">·</span>
           <span>Oramo</span>
           <span className="dot">·</span>
-          <span>2025–present</span>
+          <span>2026–present</span>
         </div>
 
         <h1>How do you put an AI in a product it has no right to see?</h1>
@@ -38,7 +38,7 @@ export default function OramoCase() {
           <div>
             <strong>Role</strong>Technical co-founder &amp; product designer ·
             design and implementation lead in a three-founder team · Oramo
-            (Jan 2025–present, launched April 2026)
+            (Jan 2026–present, launched April 2026)
           </div>
           <div>
             <strong>Team</strong>3 founders · real-estate, financial strategy,
