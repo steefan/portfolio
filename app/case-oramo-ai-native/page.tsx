@@ -36,6 +36,24 @@ export default function OramoCase() {
 
         <div className="case-fact-strip">
           <div>
+            <strong>Live</strong>
+            <a
+              href="https://oramo.ai/"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              oramo.ai
+            </a>{" "}
+            ·{" "}
+            <a
+              href="https://app.oramo.ai/"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              app.oramo.ai
+            </a>
+          </div>
+          <div>
             <strong>Role</strong>Technical co-founder &amp; product designer ·
             design and implementation lead in a three-founder team · Oramo
             (Jan 2026–present, launched April 2026)
