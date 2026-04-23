@@ -13,10 +13,41 @@ export default function Home() {
   return (
     <article className="page">
       <header className="page-header">
-        <h1 className="page-h1">Stefan Condurachi</h1>
-        <p className="page-sub">
-          Senior product designer — operator-facing tools, AI-native workflows.
-        </p>
+        <div className="page-header-main">
+          <h1 className="page-h1">Stefan Condurachi</h1>
+          <p className="page-sub">
+            Senior product designer — operator-facing tools, AI-native
+            workflows.
+          </p>
+        </div>
+        <div className="page-header-contact">
+          <div className="header-contact-label">Email</div>
+          <div className="header-contact-value">
+            <a href="mailto:stefancondurachi@gmail.com">
+              stefancondurachi@gmail.com
+            </a>
+          </div>
+          <div className="header-contact-label">LinkedIn</div>
+          <div className="header-contact-value">
+            <a
+              href="https://www.linkedin.com/in/stefancondurachi"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              linkedin.com/in/stefancondurachi
+            </a>
+          </div>
+          <div className="header-contact-label">Resume</div>
+          <div className="header-contact-value">
+            <a
+              href="/Stefan_Condurachi_Resume_2026.pdf"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              PDF
+            </a>
+          </div>
+        </div>
       </header>
 
       <section className="facts">
@@ -46,15 +77,15 @@ export default function Home() {
       </section>
 
       <section className="range">
+        <div className="mono-label range-label">Fifteen years</div>
         <div className="range-body">
-          <div className="mono-label">Fifteen years</div>
           <p className="range-lead">
             Designing complex professional tools —{" "}
             <strong>internal platforms</strong>,{" "}
             <strong>operator-facing software</strong>, <strong>B2B SaaS</strong>
-            . Shipped an <strong>Autodesk</strong> structural-engineering
+            . Worked on an <strong>Autodesk</strong> structural-engineering
             product, a cloud admin platform used by <strong>Paramount</strong>,
-            and an internal system for <strong>Gilead Sciences</strong>.
+            and an internal system at <strong>Gilead Sciences</strong>.
           </p>
           <p className="range-tail">
             The same shape of problem keeps surfacing: customer experience,
@@ -74,7 +105,7 @@ export default function Home() {
 
         <CaseInline
           href="/case-oramo-ai-native"
-          meta="Oramo · 2025–present"
+          meta="Oramo"
           title="How do you put an AI in a product it has no right to see?"
           wordmarks={["Oramo"]}
           lede="Designing an AI-native B2B product end-to-end as sole designer and sole developer. Two features, one permissions problem."
@@ -98,7 +129,7 @@ export default function Home() {
 
         <CaseInline
           href="/case-gilead-discovery"
-          meta="Gilead Sciences · 2019–2020"
+          meta="Gilead Sciences"
           title="The 30-app problem"
           wordmarks={["Gilead Sciences", "Cognizant Softvision"]}
           lede="Discovery-led replacement of a decade of legacy internal tooling at a biopharmaceutical giant."
@@ -121,7 +152,7 @@ export default function Home() {
 
         <CaseInline
           href="/case-ownzones-connect"
-          meta="Ownzones Media Network · 2015–2017"
+          meta="Ownzones Media Network"
           title="The dashboard that replaced a mailroom"
           wordmarks={["Paramount", "Sony", "Warner Bros", "MGM"]}
           lede="Paramount was still shipping feature films to distribution partners on hard drives via courier. Ownzones Connect replaced that with a browser dashboard."
@@ -185,35 +216,6 @@ export default function Home() {
         </ul>
         <div className="before-certs">
           Certified · NN/g UX Management (2016) · NN/g UX Research (2019)
-        </div>
-      </section>
-
-      <section className="contact-grid">
-        <div className="contact-label">Email</div>
-        <div>
-          <a href="mailto:stefancondurachi@gmail.com">
-            stefancondurachi@gmail.com
-          </a>
-        </div>
-        <div className="contact-label">LinkedIn</div>
-        <div>
-          <a
-            href="https://www.linkedin.com/in/stefancondurachi"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            linkedin.com/in/stefancondurachi
-          </a>
-        </div>
-        <div className="contact-label">Resume</div>
-        <div>
-          <a
-            href="/Stefan_Condurachi_Resume_2026.pdf"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            PDF
-          </a>
         </div>
       </section>
 
