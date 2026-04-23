@@ -18,7 +18,7 @@ export default function OramoCase() {
         <div className="case-meta-strip">
           <span>Case study</span>
           <span className="dot">·</span>
-          <span>Technical co-founder &amp; product designer</span>
+          <span>Co-founder &amp; product designer</span>
           <span className="dot">·</span>
           <span>Oramo</span>
           <span className="dot">·</span>
@@ -54,9 +54,9 @@ export default function OramoCase() {
             </a>
           </div>
           <div>
-            <strong>Role</strong>Technical co-founder &amp; product designer ·
-            design and implementation lead in a three-founder team · Oramo
-            (Jan 2026–present, launched April 2026)
+            <strong>Role</strong>Co-founder &amp; product designer · design
+            and implementation lead in a three-founder team · Oramo (Jan
+            2026–present, launched April 2026)
           </div>
           <div>
             <strong>Team</strong>3 founders · real-estate, financial strategy,
@@ -129,7 +129,7 @@ export default function OramoCase() {
 
         <h2>My role</h2>
         <p>
-          <strong>Technical co-founder.</strong> In a three-person founding
+          <strong>Co-founder and product designer.</strong> In a three-person founding
           team — real-estate expertise, financial strategy, and me on product
           strategy, design, and implementation — I own the product surface
           end-to-end. Bootstrapping meant{" "}

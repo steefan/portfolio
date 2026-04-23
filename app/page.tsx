@@ -112,7 +112,7 @@ export default function Home() {
               <strong>what the operator is allowed to see</strong>
             </>,
           ]}
-          deliverables={["Technical co-founder", "Design lead", "AI-native implementation"]}
+          deliverables={["Co-founder", "Design lead", "AI-native implementation"]}
           diagram={<ScatterDiagram />}
         />
 
