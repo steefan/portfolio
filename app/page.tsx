@@ -13,32 +13,16 @@ export default function Home() {
   return (
     <article className="page">
       <header className="page-header">
-        <div className="page-header-main">
-          <h1 className="page-h1">Stefan Condurachi</h1>
-          <p className="page-sub">
-            Senior product designer — operator-facing tools, AI-native
-            workflows.
-          </p>
-        </div>
-        <div className="page-header-contact">
-          <div className="header-contact-label">Email</div>
-          <div className="header-contact-value">
-            <a href="mailto:stefancondurachi@gmail.com">
-              stefancondurachi@gmail.com
-            </a>
-          </div>
-          <div className="header-contact-label">LinkedIn</div>
-          <div className="header-contact-value">
-            <a
-              href="https://www.linkedin.com/in/stefancondurachi"
-              target="_blank"
-              rel="noopener noreferrer"
-            >
-              linkedin.com/in/stefancondurachi
-            </a>
-          </div>
-          <div className="header-contact-label">Resume</div>
-          <div className="header-contact-value">
+        <h1 className="page-h1">Stefan Condurachi</h1>
+        <p className="page-sub">
+          Senior product designer — operator-facing tools, AI-native workflows.
+        </p>
+      </header>
+
+      <section className="facts">
+        <FactRow
+          label="Resume"
+          value={
             <a
               href="/Stefan_Condurachi_Resume_2026.pdf"
               target="_blank"
@@ -46,24 +30,28 @@ export default function Home() {
             >
               PDF
             </a>
-          </div>
-        </div>
-      </header>
-
-      <section className="facts">
-        <FactRow
-          label="Role"
-          value={
-            <>
-              <strong>Technical co-founder</strong>, Oramo
-            </>
           }
         />
         <FactRow
-          label="Focus"
-          value="Romania’s first intelligent property management platform"
+          label="LinkedIn"
+          value={
+            <a
+              href="https://www.linkedin.com/in/stefancondurachi"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              linkedin.com/in/stefancondurachi
+            </a>
+          }
         />
-        <FactRow label="Shipped" value="April 2026 · steady-state cadence" />
+        <FactRow
+          label="Email"
+          value={
+            <a href="mailto:stefancondurachi@gmail.com">
+              stefancondurachi@gmail.com
+            </a>
+          }
+        />
         <FactRow
           label="Status"
           value={

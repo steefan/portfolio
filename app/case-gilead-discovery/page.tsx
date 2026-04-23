@@ -31,6 +31,23 @@ export default function GileadCase() {
           more than thirty of them. Nobody was using most of them.
         </p>
 
+        <div className="case-fact-strip">
+          <div>
+            <strong>Role</strong>Discovery lead · Cognizant Softvision on
+            behalf of Gilead Sciences · 2019–2020
+          </div>
+          <div>
+            <strong>Collaborators</strong>Project team of 6 · Gilead
+            stakeholders across HR, Legal, Medical Affairs, Security,
+            Business Strategy, Library Services
+          </div>
+          <div>
+            <strong>Deliverables</strong>Stakeholder + user research synthesis
+            · LDJ facilitation · user flows · IA · signed-off wireframes ·
+            user stories
+          </div>
+        </div>
+
         <div className="outcome-block">
           <div className="outcome-label">Outcome</div>
           <ul className="outcome-bullets">
@@ -330,23 +347,6 @@ export default function GileadCase() {
           well-designed operator surface is also an intelligence surface.
         </p>
 
-        <hr />
-        <div className="case-fact-strip">
-          <div>
-            <strong>Role</strong>Discovery lead · Cognizant Softvision on
-            behalf of Gilead Sciences · 2019–2020
-          </div>
-          <div>
-            <strong>Collaborators</strong>Project team of 6 · Gilead
-            stakeholders across HR, Legal, Medical Affairs, Security,
-            Business Strategy, Library Services
-          </div>
-          <div>
-            <strong>Deliverables</strong>Stakeholder + user research synthesis
-            · LDJ facilitation · user flows · IA · signed-off wireframes ·
-            user stories
-          </div>
-        </div>
       </div>
     </div>
   );

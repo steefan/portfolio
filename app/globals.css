@@ -45,14 +45,7 @@ a.unstyled, a.unstyled:hover { border-bottom: none; }
   padding: 80px 88px 64px;
 }
 
-.page-header {
-  display: grid;
-  grid-template-columns: 1fr auto;
-  gap: 48px;
-  align-items: flex-start;
-  margin-bottom: 56px;
-}
-.page-header-main { min-width: 0; }
+.page-header { margin-bottom: 56px; }
 .page-h1 {
   font-family: var(--serif);
   font-size: 42px;
@@ -68,25 +61,6 @@ a.unstyled, a.unstyled:hover { border-bottom: none; }
   font-size: 18px;
   color: var(--ink-soft);
 }
-
-.page-header-contact {
-  display: grid;
-  grid-template-columns: auto auto;
-  row-gap: 6px;
-  column-gap: 20px;
-  font-size: 14px;
-  padding-top: 8px;
-  white-space: nowrap;
-}
-.header-contact-label {
-  font-family: var(--mono);
-  font-size: 11px;
-  letter-spacing: 0.08em;
-  color: var(--ink-soft);
-  text-transform: uppercase;
-  padding-top: 2px;
-}
-.header-contact-value { font-size: 14px; }
 
 /* ========== Mono labels ========== */
 .mono-label {
@@ -486,7 +460,10 @@ a.unstyled, a.unstyled:hover { border-bottom: none; }
   line-height: 1.8;
   letter-spacing: 0.04em;
   text-transform: uppercase;
-  margin-top: 24px;
+  padding: 20px 0;
+  margin: 0 0 40px;
+  border-top: 0.5px solid var(--rule);
+  border-bottom: 0.5px solid var(--rule);
 }
 .case-fact-strip strong {
   color: var(--ink);
@@ -496,7 +473,9 @@ a.unstyled, a.unstyled:hover { border-bottom: none; }
   min-width: 110px;
 }
 
-/* Monochrome SVG class overrides used inside case-study diagrams */
+/* Monochrome SVG class overrides used inside case-study diagrams.
+   Use sans-serif (not mono) for diagram labels — mono glyphs are ~40% wider
+   and overflow the tight phase/node boxes. */
 .case-page .diagram-bg,
 .case-page .frame { fill: #FFFFFF; stroke: var(--rule); stroke-width: 1; }
 .case-page .node-fill,
@@ -506,20 +485,20 @@ a.unstyled, a.unstyled:hover { border-bottom: none; }
 .case-page .after-block,
 .case-page .after-zone { fill: #FFFFFF; stroke: var(--ink); stroke-width: 1.3; }
 .case-page .node-label,
-.case-page .after-zone-label { font: 500 12px var(--mono); fill: var(--ink); letter-spacing: 0.02em; }
+.case-page .after-zone-label { font: 600 12px "Helvetica Neue", Helvetica, Arial, sans-serif; fill: var(--ink); }
 .case-page .node-sub,
-.case-page .after-sublabel { font: 10px var(--mono); fill: var(--ink-soft); letter-spacing: 0.04em; }
+.case-page .after-sublabel { font: 10px "Helvetica Neue", Helvetica, Arial, sans-serif; fill: var(--ink-soft); }
 .case-page .flow { stroke: var(--ink); stroke-width: 1.25; fill: none; }
 .case-page .flow-dashed { stroke: var(--ink); stroke-width: 1.25; fill: none; stroke-dasharray: 4 3; }
 .case-page .phase-tag {
-  font: 500 10px var(--mono); fill: var(--ink);
+  font: 600 10px "Helvetica Neue", Helvetica, Arial, sans-serif; fill: var(--ink);
   letter-spacing: 0.1em; text-transform: uppercase;
 }
 .case-page .panel-title {
-  font: 500 11px var(--mono);
+  font: 600 11px "Helvetica Neue", Helvetica, Arial, sans-serif;
   fill: var(--ink-soft); letter-spacing: 0.12em; text-transform: uppercase;
 }
-.case-page .panel-head { font: 600 13px var(--serif); fill: var(--ink); }
+.case-page .panel-head { font: 600 13px "Helvetica Neue", Helvetica, Arial, sans-serif; fill: var(--ink); }
 .case-page .quote-serif {
   font: italic 12px var(--serif);
   fill: var(--ink-soft);
@@ -527,27 +506,27 @@ a.unstyled, a.unstyled:hover { border-bottom: none; }
 .case-page .user-bubble { fill: rgba(26, 22, 18, 0.05); stroke: var(--ink-mute); stroke-width: 0.5; }
 .case-page .assistant-bubble { fill: rgba(26, 22, 18, 0.08); stroke: var(--ink-mute); stroke-width: 0.5; }
 .case-page .forbidden-bubble { fill: #FFFFFF; stroke: var(--ink); stroke-width: 1; stroke-dasharray: 3 2; }
-.case-page .bubble-label { font: 10.5px var(--mono); fill: var(--ink); letter-spacing: 0.02em; }
+.case-page .bubble-label { font: 10.5px "Helvetica Neue", Helvetica, Arial, sans-serif; fill: var(--ink); }
 .case-page .forbidden-label { font: italic 10px var(--serif); fill: var(--ink); }
-.case-page .tile-label { fill: var(--ink-mute); font: 9px var(--mono); }
+.case-page .tile-label { fill: var(--ink-mute); font: 9px "Helvetica Neue", Helvetica, Arial, sans-serif; }
 .case-page .arrow-line { stroke: var(--ink); stroke-width: 1.5; fill: none; }
 .case-page .arrow-label {
-  font: 500 11px var(--mono); fill: var(--ink);
+  font: 600 11px "Helvetica Neue", Helvetica, Arial, sans-serif; fill: var(--ink);
   letter-spacing: 0.1em; text-transform: uppercase;
 }
 .case-page .timeline-axis { stroke: var(--ink); stroke-width: 1; }
 .case-page .tick { stroke: var(--ink); stroke-width: 1; }
 .case-page .week-label {
-  font: 500 11px var(--mono); fill: var(--ink);
+  font: 600 11px "Helvetica Neue", Helvetica, Arial, sans-serif; fill: var(--ink);
   letter-spacing: 0.08em; text-transform: uppercase;
 }
 .case-page .phase-band { fill: rgba(26, 22, 18, 0.05); stroke: var(--ink-mute); stroke-width: 0.75; }
 .case-page .phase-band-onsite { fill: rgba(26, 22, 18, 0.1); stroke: var(--ink-mute); stroke-width: 0.75; }
-.case-page .phase-label { font: 500 10px var(--mono); fill: var(--ink); letter-spacing: 0.04em; }
-.case-page .phase-sublabel { font: 10px var(--mono); fill: var(--ink-soft); letter-spacing: 0.04em; }
+.case-page .phase-label { font: 600 10px "Helvetica Neue", Helvetica, Arial, sans-serif; fill: var(--ink); }
+.case-page .phase-sublabel { font: 10px "Helvetica Neue", Helvetica, Arial, sans-serif; fill: var(--ink-soft); }
 .case-page .location-label { font: italic 11px var(--serif); fill: var(--ink); }
 .case-page .step-label {
-  font: 10px var(--mono); fill: var(--ink-soft);
+  font: 10px "Helvetica Neue", Helvetica, Arial, sans-serif; fill: var(--ink-soft);
   letter-spacing: 0.08em; text-transform: uppercase;
 }
 
@@ -556,16 +535,6 @@ a.unstyled, a.unstyled:hover { border-bottom: none; }
   .page { padding: 48px 24px 64px; }
   .page-h1 { font-size: 34px; }
   .page-sub { font-size: 16px; }
-
-  .page-header {
-    grid-template-columns: 1fr;
-    gap: 20px;
-  }
-  .page-header-contact {
-    grid-template-columns: auto 1fr;
-    column-gap: 16px;
-    padding-top: 0;
-  }
 
   .fact-row { grid-template-columns: 1fr; row-gap: 2px; }
   .fact-row .fact-label { padding-top: 0; }

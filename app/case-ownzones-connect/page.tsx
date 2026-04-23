@@ -31,6 +31,25 @@ export default function OwnzonesCase() {
           We replaced that with a cloud dashboard.
         </p>
 
+        <div className="case-fact-strip">
+          <div>
+            <strong>Role</strong>Senior UX designer · first UX hire · Ownzones
+            Media Network (2015–2017)
+          </div>
+          <div>
+            <strong>Products</strong>Ownzones Connect · consumer VOD app
+            across web, iOS, Android, Apple TV, Roku TV
+          </div>
+          <div>
+            <strong>Clients</strong>Paramount · Sony · Warner Bros · MGM · and
+            additional post-production partners
+          </div>
+          <div>
+            <strong>Also</strong>Established internal UX process · mentored
+            junior UX designers
+          </div>
+        </div>
+
         <div className="outcome-block">
           <div className="outcome-label">Outcome</div>
           <ul className="outcome-bullets">
@@ -244,25 +263,6 @@ export default function OwnzonesCase() {
           </strong>
         </p>
 
-        <hr />
-        <div className="case-fact-strip">
-          <div>
-            <strong>Role</strong>Senior UX designer · first UX hire · Ownzones
-            Media Network (2015–2017)
-          </div>
-          <div>
-            <strong>Products</strong>Ownzones Connect · consumer VOD app
-            across web, iOS, Android, Apple TV, Roku TV
-          </div>
-          <div>
-            <strong>Clients</strong>Paramount · Sony · Warner Bros · MGM · and
-            additional post-production partners
-          </div>
-          <div>
-            <strong>Also</strong>Established internal UX process · mentored
-            junior UX designers
-          </div>
-        </div>
       </div>
     </div>
   );

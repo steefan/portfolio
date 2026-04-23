@@ -33,6 +33,26 @@ export default function OramoCase() {
           they turned out to share.
         </p>
 
+        <div className="case-fact-strip">
+          <div>
+            <strong>Role</strong>Technical co-founder &amp; product designer ·
+            sole designer and sole developer · Oramo (Jan 2025–present,
+            launched April 2026)
+          </div>
+          <div>
+            <strong>Team</strong>3 founders · real-estate, financial strategy,
+            product &amp; engineering
+          </div>
+          <div>
+            <strong>Stack</strong>Next.js · TypeScript · Supabase · Vercel ·
+            Claude Code
+          </div>
+          <div>
+            <strong>Deliverables</strong>End-to-end product design, AI
+            integrations, data architecture, implementation, launch
+          </div>
+        </div>
+
         <div className="outcome-block">
           <div className="outcome-label">Outcome</div>
           <ul className="outcome-bullets">
@@ -312,26 +332,6 @@ export default function OramoCase() {
           tradeoff calls in the room.
         </p>
 
-        <hr />
-        <div className="case-fact-strip">
-          <div>
-            <strong>Role</strong>Technical co-founder &amp; product designer ·
-            sole designer and sole developer · Oramo (Jan 2025–present,
-            launched April 2026)
-          </div>
-          <div>
-            <strong>Team</strong>3 founders · real-estate, financial strategy,
-            product &amp; engineering
-          </div>
-          <div>
-            <strong>Stack</strong>Next.js · TypeScript · Supabase · Vercel ·
-            Claude Code
-          </div>
-          <div>
-            <strong>Deliverables</strong>End-to-end product design, AI
-            integrations, data architecture, implementation, launch
-          </div>
-        </div>
       </div>
     </div>
   );
