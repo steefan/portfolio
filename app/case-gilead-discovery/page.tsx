@@ -277,53 +277,59 @@ export default function GileadCase() {
 
         <figure>
           <svg
-            viewBox="0 0 700 240"
+            viewBox="0 0 700 280"
             xmlns="http://www.w3.org/2000/svg"
             role="img"
             aria-label="Five-week discovery timeline"
           >
-            <line className="timeline-axis" x1="60" y1="180" x2="660" y2="180" />
+            <text className="location-label" x="170" y="26" textAnchor="middle">on-site, California</text>
+            <line x1="80" y1="30" x2="260" y2="30" stroke="var(--ink)" strokeWidth="1" />
+            <text className="location-label" x="420" y="26" textAnchor="middle">remote, Bucharest</text>
+            <line x1="280" y1="30" x2="560" y2="30" stroke="var(--ink)" strokeWidth="1" />
 
-            <line className="tick" x1="80" y1="175" x2="80" y2="185" />
-            <text className="week-label" x="80" y="205" textAnchor="middle">Week 1</text>
+            {/* Row 1: Workshops + User flows */}
+            <rect className="phase-band-onsite" x="80" y="50" width="180" height="54" rx="2" />
+            <text className="phase-label" x="92" y="70">Workshops &amp; interviews</text>
+            <text className="phase-sublabel" x="92" y="86">LDJ, stakeholder +</text>
+            <text className="phase-sublabel" x="92" y="100">user interviews</text>
 
-            <line className="tick" x1="200" y1="175" x2="200" y2="185" />
-            <text className="week-label" x="200" y="205" textAnchor="middle">Week 2</text>
+            <rect className="phase-band" x="280" y="50" width="280" height="54" rx="2" />
+            <text className="phase-label" x="292" y="70">User flows &amp; IA</text>
+            <text className="phase-sublabel" x="292" y="86">Flow diagrams tied to the</text>
+            <text className="phase-sublabel" x="292" y="100">new priority set</text>
 
-            <line className="tick" x1="320" y1="175" x2="320" y2="185" />
-            <text className="week-label" x="320" y="205" textAnchor="middle">Week 3</text>
+            {/* Row 2: Feature reprioritization + Wireframes */}
+            <rect className="phase-band-onsite" x="80" y="116" width="180" height="54" rx="2" />
+            <text className="phase-label" x="92" y="136">Feature reprioritization</text>
+            <text className="phase-sublabel" x="92" y="152">Scope changes,</text>
+            <text className="phase-sublabel" x="92" y="166">signed off</text>
 
-            <line className="tick" x1="440" y1="175" x2="440" y2="185" />
-            <text className="week-label" x="440" y="205" textAnchor="middle">Week 4</text>
+            <rect className="phase-band" x="280" y="116" width="280" height="54" rx="2" />
+            <text className="phase-label" x="292" y="136">Wireframes</text>
+            <text className="phase-sublabel" x="292" y="152">Pressure-tested against Xamarin,</text>
+            <text className="phase-sublabel" x="292" y="166">SharePoint, API, security</text>
 
-            <line className="tick" x1="560" y1="175" x2="560" y2="185" />
-            <text className="week-label" x="560" y="205" textAnchor="middle">Week 5</text>
+            {/* Row 3: Sign-off */}
+            <rect className="phase-band" x="480" y="184" width="80" height="30" rx="2" />
+            <text className="phase-label" x="492" y="203">Sign-off</text>
 
-            <text className="location-label" x="140" y="26" textAnchor="middle">on-site, California</text>
-            <line x1="80" y1="30" x2="200" y2="30" stroke="var(--ink)" strokeWidth="1" />
-            <text className="location-label" x="440" y="26" textAnchor="middle">remote, Bucharest</text>
-            <line x1="320" y1="30" x2="560" y2="30" stroke="var(--ink)" strokeWidth="1" />
+            {/* Timeline axis + week ticks */}
+            <line className="timeline-axis" x1="60" y1="232" x2="660" y2="232" />
 
-            <rect className="phase-band-onsite" x="80" y="50" width="120" height="36" rx="2" />
-            <text className="phase-label" x="90" y="67">Workshops &amp; interviews</text>
-            <text className="phase-sublabel" x="90" y="81">LDJ, stakeholder + user</text>
+            <line className="tick" x1="80" y1="227" x2="80" y2="237" />
+            <text className="week-label" x="80" y="257" textAnchor="middle">Week 1</text>
 
-            <rect className="phase-band-onsite" x="80" y="96" width="120" height="36" rx="2" />
-            <text className="phase-label" x="90" y="113">Feature reprioritization</text>
-            <text className="phase-sublabel" x="90" y="127">Scope changes, signed off</text>
+            <line className="tick" x1="200" y1="227" x2="200" y2="237" />
+            <text className="week-label" x="200" y="257" textAnchor="middle">Week 2</text>
 
-            <rect className="phase-band" x="200" y="50" width="360" height="36" rx="2" />
-            <text className="phase-label" x="210" y="67">User flows &amp; IA</text>
-            <text className="phase-sublabel" x="210" y="81">Flow diagrams tied to the new priority set</text>
+            <line className="tick" x1="320" y1="227" x2="320" y2="237" />
+            <text className="week-label" x="320" y="257" textAnchor="middle">Week 3</text>
 
-            <rect className="phase-band" x="240" y="96" width="320" height="36" rx="2" />
-            <text className="phase-label" x="250" y="113">Wireframes</text>
-            <text className="phase-sublabel" x="250" y="127">
-              Pressure-tested against Xamarin, SharePoint, API, security
-            </text>
+            <line className="tick" x1="440" y1="227" x2="440" y2="237" />
+            <text className="week-label" x="440" y="257" textAnchor="middle">Week 4</text>
 
-            <rect className="phase-band" x="480" y="142" width="80" height="26" rx="2" />
-            <text className="phase-label" x="490" y="159">Sign-off</text>
+            <line className="tick" x1="560" y1="227" x2="560" y2="237" />
+            <text className="week-label" x="560" y="257" textAnchor="middle">Week 5</text>
           </svg>
           <figcaption>
             <span className="fig-label">Fig. 2</span>
